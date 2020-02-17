@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0">
+  <sld:NamedLayer>
+    <sld:Name>OG containers signs</sld:Name>
+    <sld:UserStyle>
+      <sld:Name>OG containers signs</sld:Name>
+      <sld:Title>OG containers signs</sld:Title>
+      <sld:Abstract>OG containers signs</sld:Abstract>
+      <sld:FeatureTypeStyle>
+        <sld:Name>bgt punten</sld:Name>
+		
+        <sld:Rule>
+        
+          <sld:Name>KUNSTWERKDEEL</sld:Name>
+          
+          <sld:Title>KUNSTWERKDEEL</sld:Title>
+          
+          <ogc:Filter>
+            
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>KUNSTWERKDEEL                                                                                                                                                                                        				</ogc:Literal>                                                                                                      
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#7575a3</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule>
+          <sld:Name>BAK</sld:Name>
+          <sld:Title>BAK</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>BAK                                                                                                                                                                                                     </ogc:Literal>                                                                                                      
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#669900</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule>
+          <sld:Name>BORD</sld:Name>
+          <sld:Title>BORD</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>BORD                                                                                                                                                                                                    </ogc:Literal>                                                                                                      
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#0066ff</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule>
+          <sld:Name>KAST</sld:Name>
+          <sld:Title>KAST</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>KAST                                                                                                                                                                                                    </ogc:Literal>                                                                                                                                                                                                                                     
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#cc6600</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+         <sld:Rule>
+          <sld:Name>PAAL</sld:Name>
+          <sld:Title>PAAL</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>PAAL                                                                                                                                                                                                    </ogc:Literal>                                                                                                                                                                                                                                     
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+           <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#ffcc00</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+         <sld:Rule>
+          <sld:Name>PUT</sld:Name>
+          <sld:Title>PUT</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>PUT                                                                                                                                                                                                     </ogc:Literal>                                                                                                                                                                                                                                     
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+           <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#9933ff</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+         <sld:Rule>
+          <sld:Name>STRAATMEUBILAIR</sld:Name>
+          <sld:Title>STRAATMEUBILAIR</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>STRAATMEUBILAIR                                                                                                                                                                                         </ogc:Literal>                                                                                                                                                                                                                                     
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+           <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#ff9900</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule>
+          <sld:Name>VEGETATIEOBJECT</sld:Name>
+          <sld:Title>VEGETATIEOBJECT</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>VEGETATIEOBJECT                                                                                                                                                                                         </ogc:Literal>                                                                                                                                                                                                                                     
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#336600</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule>
+          <sld:Name>WEGINRICHTINGSELEMENT</sld:Name>
+          <sld:Title>WEGINRICHTINGSELEMENT</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>objecttype</ogc:PropertyName>
+              <ogc:Literal>WEGINRICHTINGSELEMENT                                                                                                                                                                                   </ogc:Literal>                                                                                                                                                                                                                                     
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MaxScaleDenominator>3000</MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:Mark>
+                <sld:WellKnownName>circle</sld:WellKnownName>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#993399</sld:CssParameter>
+              </sld:Fill>
+             <Stroke>
+               <CssParameter name="stroke">#000000</CssParameter>
+               <CssParameter name="stroke-width">1</CssParameter>
+             </Stroke>
+              </sld:Mark>
+              <sld:Size>
+                <ogc:Literal>8</ogc:Literal>
+              </sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </sld:NamedLayer>
+</sld:StyledLayerDescriptor>

@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container"> <!-- alert class -->
+    <div class="row mt-alerts" id="error-container">
+         <div class="span12">
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                  <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+                  {% if messages %}
+                    {% for category, message in messages %}
+                      <div class="alert alert-{{ category }} alert-dismissible" role="alert" >
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <!-- <strong>Title</strong> --> {{ message }}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+
+         </div>
+    </div>
+</div>  <!-- END alert class -->
+
+<!-- legend modal div -->
+<div id="legengimgdiv"></div>
+
+<!-- Slider modal div -->
+<div id="sliderdiv"></div>
+
+<!-- Metada infomation div -->
+<div id="metadaInfoDiv"></div>
+
+<!-- street view div -->
+<div id="street-view">
+
+</div>
+
+<!-- <div id="street-view"></div> -->
+<div class="" id="layer_list_menu">
+	<h2 class="layer_title" data-offset-top="0">Layer List</h2>
+	<div class="thema_layer_menu">
+		<!-- Filter modal div -->
+		<div style="padding-top:2px;" class="accordion-heading"> <!-- Achtergron kaart button -->
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#categorieen-accordion" href="#achtergronden">
+				<span class="text">Achtergrond kaarten</span>
+			<span class="icon-caret icon-caret-right"></span></a>
+		</div> <!-- END Achtergron kaart button -->
+
+		<div class="label_div2"> <!-- Achtergron kaarten -->
+			<div id="achtergronden" class="collapse"></div>
+		</div>  <!-- END Achtergron kaarten -->
+
+		<div class="accordion-heading"> <!-- Thema kaarten PDOK button -->
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#categorieen-accordion" href="#basiskaarten">
+				<span class="text">Basisregistraties</span>
+			<span class="icon-caret icon-caret-right"></span></a>
+		</div> <!-- END Thema kaarten PDOK button -->
+
+		<div class="label_div2"> <!-- Thema kaarten PDOK-->
+			<div id="basiskaarten" class="collapse"></div>
+		</div> <!-- END Thema kaarten PDOK-->
+
+		<div class="accordion-heading"> <!-- Thema kaarten Luchtofo's button -->
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#categorieen-accordion" href="#luchtfotos">
+				<span class="text">Luchtfoto</span>
+			<span class="icon-caret icon-caret-right"></span></a>
+		</div> <!-- END Thema kaarten Luchtofo's button -->
+
+		<div class="label_div2"> <!-- Thema kaarten Luchtofo's-->
+			<div id="luchtfotos" class="collapse"></div>
+		</div> <!-- END Luchtfoto's -->
+
+		<div class="accordion-heading"> <!-- Thema kaarten button -->
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#categorieen-accordion" href="#themakaarten">
+				<span class="text">Thema kaarten</span>
+			<span class="icon-caret icon-caret-right"></span></a>
+		</div> <!-- END Thema kaarten button -->
+
+		<div class="label_div2"> <!-- Thema kaarten -->
+			<div id="themakaarten" class="collapse"></div>
+			<!-- <div id="filterdiv" class="alert alert-primary" role="alert"></div> -->
+			<div id="filterdiv"  class="alert alert-primary collapse" role="alert">
+				<div class="" id="filterDataInput"></div>
+				<div id="filterDataResult"></div>
+			</div>
+
+		</div> <!-- END thema kaarten -->
+	</div>
+
+
+</div>
+
+<!-- dynamic data result div -->
+<div id="rel_popup_div" class="info-div-all" >
+  <h5>Geselecteerde objecten <button title="Sluiten"
+    id="close_btn" type="button"
+    class="btn btn-cls_data">X</button>
+  </h5>
+
+	<div id="dataResult"></div>
+
+</div> <!-- END rel popup div -->
+<!-- END data result div -->
+<div class="row">
+	<div class="col-sm-12">
+		<div class="main-content">
+			<div id="map">
+				<div style="padding:7px;" id="zoekopadres">
+            <!-- Adress search box -->
+            <div class="form-group has-feedback has-search">
+              <span class="glyphicon glyphicon-search form-control-feedback">
+              </span>
+              <input id="straatnaam" type="text" class="form-control"
+              placeholder="Search by address">
+            </div>
+						<!-- <i class="glyphicon glyphicon-search"></i> -->
+				</div>
+
+
+				<div id="streetman" title="Google Street-View" class="btn_stret_sty">
+					<img src={{ url_for('static', filename='images/streetman.png')}} alt="">
+				</div>
+				<div id="layer_icon" title="Layer list" class="btn_layerlist">
+					<img src={{ url_for('static', filename='images/layer_icon.png')}} alt="">
+				</div>
+				<div id="filter_data" title="Filter data">
+					<img src={{ url_for('static', filename='images/filter_data.png')}} alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <!-- END row class -->
+{% endblock %}

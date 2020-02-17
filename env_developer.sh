@@ -1,0 +1,8 @@
+# THIS FILE IS FOR DEVELOPING PURPOSE ONLY
+# FOR RUNNING ALL THE VARILABLES ARE HANDLED BY THE MAKEFILE.
+export APP_SETTINGS=config.DevelopmentConfig
+
+# on CLOUD mijndatalab
+export PATH=/usr/pgsql-12/bin:${PATH}
+
+#EOF

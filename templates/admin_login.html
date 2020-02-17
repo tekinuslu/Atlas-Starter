@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="wrapper">
+    <form class="form-signin" method="POST">
+      <!-- start: flask alert -->
+                <div class="row">
+                  <div class="col-lm-12">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                  <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+                  {% if messages %}
+                    {% for category, message in messages %}
+                      <div class="alert alert-{{ category }} alert-dismissible" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <!-- <strong>Title</strong> --> {{ message }}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+                  </div>
+                </div>
+      <!-- end: flask alert -->
+      <h4 class="form-signin-heading"> Admin Panel </h4>
+      <hr>
+      <label for="username">Username</label>
+      <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+      <hr>
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+      <hr>
+      <!-- <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <hr> -->
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    </form>
+  </div>
+{% endblock %}
