@@ -47,23 +47,8 @@ settings_local.py
 # Vim
 tags
 
-# Werkmap
-1.3/js/werkmap.js
-
-# Backup
-1.3/backup/
-
-# Zip files
-1.3/*.zip
-*.zip
-
-# Sld
-1.3/sld/
-
-# Generated files
-docs/todo.html
-atlas.log
-
 # Log files
 *.log
 
+# Database
+db.sqlite
